@@ -1,13 +1,10 @@
 const App = ({ course }) => {
-  console.log(course);
+  // console.log(course);
 
   const exerciseFunc = (index) => {
     const exerciseArr = course[index].parts.map((element) => element.exercises);
     return exerciseArr.reduce((acc, curr) => acc + curr);
   };
-
-  // const total = exerciseArr.reduce((acc, curr) => acc + curr);
-  // console.log(total);
 
   return (
     <div>
